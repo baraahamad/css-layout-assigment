@@ -26,7 +26,7 @@ body {
 .content {
   display: flex;
   flex-grow: 1;
-  align-items: stretch; /* Ensures left and right sections are equal in height */
+  align-items: stretch;
 }
 
 /* Left Section */
@@ -48,19 +48,17 @@ body {
 }
 
 /* Bottom Flexbox Section */
-
-/* Bottom Flexbox Section */
 .bottom-flexbox {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 20px;
-  justify-content: space-between; /* Ensure items are evenly spaced */
+  justify-content: space-between; 
 }
 
 .flex-item {
   background-color: #bbb;
-  flex: 1 1 calc(20% - 10px); /* Each item will take up 20% of the row with a 10px gap */
+  flex: 1 1 calc(20% - 10px); 
   height: 120px;
   display: flex;
   align-items: center;
