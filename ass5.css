@@ -47,7 +47,6 @@ body {
   min-height: 250px;
 }
 
-
 /* Bottom Flexbox Section */
 .bottom-flexbox {
   display: flex;
@@ -57,16 +56,28 @@ body {
   justify-content: space-between;
 }
 
+/* Container wrapping each flex-item and paragraph */
+.flex-container {
+  flex-basis: calc(20% - 10px); 
+  margin-bottom: 40px;
+}
+
+/* Box styling */
 .flex-item {
   background-color: #bbb;
   min-height: 150px;
-  min-width: 100px;
-  flex: 1 1 calc(20% - 10px); 
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  margin-bottom: 40px;
+}
+
+/* Style for paragraphs under flex-items */
+.flex-container p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
 }
 
 /* Right Section */
@@ -88,9 +99,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Right Bottom Flexbox */
-.right-flex-item-header{
-
+.right-flex-item-header {
   background-color: #4c4c4c;
   color: white;
   display: flex;
@@ -99,12 +108,21 @@ body {
   min-height: 40px;
   margin-bottom: 20px;
 }
-.right-bottom-flexbox {
+/* Right Flexbox Container */
+.right-flexbox-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
+/* Right Item Container */
+.right-item-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; 
+}
+
+/* Right Flex Item */
 .right-flex-item {
   background-color: #bbb;
   height: 120px;
@@ -113,5 +131,18 @@ body {
   align-items: center;
   justify-content: center;
   color: black;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+/* Paragraphs beside the right flex items */
+.right-item-paragraphs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-item-paragraphs p {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
 }
